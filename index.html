@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>te extraño irina</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="regalo.css">
+</head>
+<body>
+
+<div id="decoraciones"></div>
+
+<!-- decoraciones fijas: gatita con capucha estilo kawaii y bloques pixel -->
+<div id="mascota-izq" class="mascota"></div>
+<div id="mascota-der" class="mascota"></div>
+<div id="bloque-corazon" class="mini-bloque"></div>
+<div id="bloque-pasto" class="mini-bloque"></div>
+
+<!-- PANTALLA CORAZON -->
+<div id="overlay">
+  <div class="msg-top pixel">✧ toca el corazon mi amor ✧</div>
+  <div id="heart-grid"></div>
+  <div id="texto-editable" spellcheck="false" onclick="event.stopPropagation()">
+     te amo demasiado iris eres el amor de mi vida y perdon
+  </div>
+  <div class="hint pixel"></div>
+</div>
+
+<!-- CONTENIDO -->
+<div id="contenido">
+  <header class="hero">
+    <h1 class="pixel">PARA TI, MI BIZCOCHITO</h1>
+    <p spellcheck="false">tengo todo lo q vivimos para recordar lo nuestro mi princesa , nuestra felicidad y nuestros momentos juntos q fueron hermosos te amo</p>
+  </header>
+
+  <section class="seccion">
+    <h2 class="titulo-seccion pixel">nuestra historia</h2>
+
+    <div class="tabs" id="tabs">
+      <button class="tab activa" data-filter="todas">Todas</button>
+      <button class="tab" data-filter="cartas">julio</button>
+      <button class="tab" data-filter="juegos">minecraft</button>
+      <button class="tab" data-filter="nosotros">Nosotros</button>
+      <button class="tab" data-filter="sorpresas">llamadas</button>
+    </div>
+
+    <!-- ============================================================
+         GALERÍA: cada tarjeta la controlas tú desde aquí, en el HTML.
+         - data-cat: en qué pestaña aparece ("cartas", "juegos", "nosotros" o "sorpresas")
+         - dentro de style="background-image:url('AQUÍ VA TU LINK DE IMGBB')"
+           pega el link directo de la imagen (termina en .jpg/.png/.gif).
+           Si lo dejas vacío queda un espacio en blanco esperando la foto.
+         - el <p class="descripcion"> es el texto de abajo: puedes escribirlo,
+           borrarlo o moverlo de tarjeta con solo cortar y pegar ese bloque.
+    ============================================================= -->
+    <div class="collage" id="collage">
+
+      <div class="foto" data-cat="julio">
+        <div class="foto-img" style="background-image:url('https://i.ibb.co/qMDMfK1M/jul1.jpg')"></div>
+        <p class="descripcion" spellcheck="false">nuestra primera semana de novios donde eramos inseparables y te jodia q me pongas de pfp</p>
+      </div>
+
+      <div class="foto" data-cat="juegos">
+        <div class="foto-img" style="background-image:url('https://i.ibb.co/60z9kNYc/m2.jpg')"></div>
+        <p class="descripcion" spellcheck="false">cuando estabamos haciendo el mundo y encontramos nuestra primera aldea y hicimos una familia donde mi perro mato al tuyo</p>
+      </div>
+
+      <div class="foto" data-cat="nosotros">
+        <div class="foto-img" style="background-image:url('https://i.ibb.co/Y7F1Y6mW/n2.jpg')"></div>
+        <p class="descripcion" spellcheck="false">nuestra segunda semana de novios y eramos inseparables y me prometiste hacerte mi inicial pq te tenia en todos lados de mi cuarto sjafj</p>
+      </div>
+
+      <div class="foto" data-cat="sorpresas">
+        <div class="foto-img" style="background-image:url('https://i.ibb.co/M5Jw874b/n2.png')"></div>
+        <p class="descripcion" spellcheck="false">cuando dsp antes de dormir haciamos videollamada hablabamos todas las noches y te decia fotito para la historia de ig jsafj/p>
+      </div>
+
+      <div class="foto" data-cat="cartas">
+        <div class="foto-img" style="background-image:url('https://i.ibb.co/F4GC2KVV/j1.jpg')"></div>
+        <p class="descripcion" spellcheck="false">donde te habia prometido hacerte un zing y te lo hice igualmente fue en nuestra primera semana</p>
+      </div>
+
+      <div class="foto" data-cat="juegos">
+        <div class="foto-img" style="background-image:url('https://i.ibb.co/PGWWMNcq/m3.jpg')"></div>
+        <p class="descripcion" spellcheck="false">el mismo dia de la primera foto encontre una rosita te la di y te roge para q me tomaras una foto</p>
+      </div>
+
+      <div class="foto" data-cat="nosotros">
+        <div class="foto-img" style="background-image:url('https://i.ibb.co/x8GwyCQD/n1.jpg')"></div>
+        <p class="descripcion" spellcheck="false">quise darte una sorpresa donde mostraba todas las cosas donde te tenia pero no sabia como agarrar mi cortina jsfj</p>
+      </div>
+
+      <div class="foto" data-cat="sorpresas">
+        <div class="foto-img" style="background-image:url('https://i.ibb.co/ZpwbGYSJ/l2.png')"></div>
+        <p class="descripcion" spellcheck="false">nuestra primera llamada larga la guarde pq te amo</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="seccion">
+    <h2 class="titulo-seccion pixel">NUESTRA HISTORIA</h2>
+    <div class="caja-texto" spellcheck="false">
+     todo inicio un dia donde dante me presento a irina y a mi me gustaba pero ella era dificil y creia q solo queria ilusionarme dsp de unos dias de hablar me hablo para mostrarme sus 2 pantallas y ahi comenzo todo hablamos de series etc me dijiste para ver the diaries vampires y esa noche vimos 2 episodios y en el 2do aparecio damon y dijiste "minovio" y me dio celos y me hice el enojado ajsfjasfj dsp de eso hablabamos veiamos la serie hasta q comenzaron los te quiero comenze a pedirte besos en llamada como cuando te mostre mi cara x primera vez con nadie lo habia hecho la vrd pero igual yo lo hice contigo y ahi comenzo a desarollarse todo , todos los dias hablabamos no nos ocultabamos nada y nos amabamos y dsp dejamos de ver the vampire diaries pq me spoilee JSAFJAJF y vi q damon terminaba con la carajita esa y te dije q ni mas la vieramos y asi fue dsp comenzamos con you me encanto me conoces tan bien q me lo dijiste q me iba a gustar y asi fue la vimos me encanto cada personaje nos sentiamos como si fueramos nosotros y nos quedamos en un episodio donde you fue agarrado hasta q termino lo nuestro x un mal entendido y me arrepiento te lo juro me arrepiento no haberte explicado y ahi nos alejamos del uno del otro y me haces demasiada falta todos los dias y termine haciendo esto
+    </div>
+
+  </section>
+
+  <section class="seccion">
+    <h2 class="titulo-seccion pixel">por lo q te amo </h2>
+    <div class="caja-grande" spellcheck="false">
+       siempre te lo he dicho tu forma de ser auntentica real exclusiva ser tu simplemente ser tu , tus ojitos , tu carita hermosa , tu voz q tanto me relaja , tu pelito , tus cejitas , tus labios , tu cuerpo , tus manos , tus piernas , tus sentimientos tu forma de amarme tu forma de celarme tu forma de ser tu conmigo hicieron q todo esto fuera real y auntentico y la vrd no me arrepiento de anda pq fue la unica relacion donde fui yo mismo pq me sentia bien contigo seguro lo suficiente para hacer de todo contigo y tmb amo cuando estabas enojada jugando dbd jugando fornite jugando mc cuando te ganaba jsafkasf y eras bien buena jugando aun asi y creias q no cuando te hacias la celosa x cosas nada q ver , tmb cuando cantabamos musicas y me dijiste hablar ingles pero no sabia pero te cantaba mis musicas favoritas jasfkas y las canto y me acuerdo a mi bebe ,mi loquita celosa te amo x todo lo q eres te amo
+    </div>
+
+  </section>
+
+  <footer class="pixel">
+    perdoname mi princesa mi mami mi todo hecho solo para mi princesa irina , bizcocho , chaos , iri , iri la come mila milanesa , iri la configuradora , iri la chica aura , todo.
+  </footer>
+</div>
+
+<script src="regalo.js"></script>
+</body>
+</html>
